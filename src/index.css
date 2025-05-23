@@ -1,0 +1,372 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.input-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  color: #aaa;
+  font-size: 1em;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 10px 10px 36px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 12px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  font-size: 0.9em;
+  color: #444;
+}
+
+.forgot-password {
+  font-size: 0.9em;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn.login-btn {
+  padding: 12px;
+  background: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.btn.login-btn:hover {
+  background: #3a78c2;
+}
+
+.social-login {
+  text-align: center;
+}
+
+.social-text {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon.google {
+  color: #db4437;
+}
+
+.icon.facebook {
+  color: #3b5998;
+}
+
+.icon.instagram {
+  color: #e1306c;
+}
+
+.signup-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #444;
+}
+
+.signup-text a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7fafc;
+  color: #2d3748;
+}
+
+.sidebar {
+  width: 240px;
+  background: #1a202c;
+  color: white;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu li.active {
+  background-color: #2b6cb0;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c53030;
+}
+
+section {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
+}
+
+.product-category {
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+
+.product-card {
+  background: #edf2f7;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s;
+}
+
+.add-btn {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #2b6cb0;
+}
+
+.disabled-btn {
+  background-color: #a0aec0;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: not-allowed;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.order-card {
+  background: #e6fffa;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.cancel-btn {
+  background-color: #e53e3e;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #c53030;
+}
+
+.billing p, .history ul {
+  font-weight: 600;
+}
+
+.history ul {
+  list-style: inside disc;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.history li {
+  margin-bottom: 0.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0.5rem;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .sidebar-menu li {
+    padding: 0.5rem 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .product-list {
+    justify-content: center;
+  }
+}
